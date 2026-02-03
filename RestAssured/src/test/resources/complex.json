@@ -1,0 +1,33 @@
+{
+  "status": "success",
+  "data": {
+    "userDetails": {
+      "id": 1234,
+      "name": "John Doe",
+      "email": "john.deo@example.com",
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "123-456-7890"
+        },
+        {
+          "type": "work",
+          "number": "987-654-3210"
+        }
+      ],
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "geo": {
+          "latitude": 39.7817,
+          "longitude": -89.6501
+        }
+      },
+      "preferences": {
+        "notification": true,
+        "theme": "dark",
+        "language": ["English", "Hindi"]
+      }
+    }
+  }
+}

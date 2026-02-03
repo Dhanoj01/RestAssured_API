@@ -1,0 +1,14 @@
+Request and Response
+---------------------
+
+
+https://localhost:3000/employees
+https://localhost:3000/employees/1
+
+https://localhost:3000/employees?last_name=King
+https://localhost:3000/employees?first_name
+
+https://localhost:3000/employees?gender=female
+https://localhost:3000/employees?gender=male
+
+
