@@ -19,10 +19,21 @@ public class DataDrivenTesting {
     }
     
     //for JSON
-    @Test(dataProvider = "excelDataProvider", dataProviderClass = DataProviders.class)
+    @Test(dataProvider = "jsonDataProvider", dataProviderClass = DataProviders.class)
     public void testWithJsonData(Map<String,String>data) {
         testSubmitAndDeleteOrder(data.get("BookId") , data.get("CustomerName"));
     }
+    
+    //for csv
+    @Test(dataProvider = "csvDataProvider", dataProviderClass = DataProviders.class)
+    public void testWithCsvData(Map<String,String>data) {
+        testSubmitAndDeleteOrder(data.get("BookId") , data.get("CustomerName"));
+    }
+    
+    
+    
+    
+    
     
     public void testSubmitAndDeleteOrder(String bookId, String customerName) {
 

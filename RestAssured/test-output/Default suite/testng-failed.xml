@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Dayy11.GraphQL_QueryTests">
+      <class name="Day2.ParameterDemo">
         <methods>
-          <include name="testFetchPublicTodos"/>
+          <include name="queryParamm"/>
         </methods>
-      </class> <!-- Dayy11.GraphQL_QueryTests -->
+      </class> <!-- Day2.ParameterDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

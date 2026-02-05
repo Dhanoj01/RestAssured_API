@@ -2,6 +2,7 @@ package Dayy10;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -9,6 +10,9 @@ import org.testng.annotations.DataProvider;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import java.io.FileReader;
+import java.io.BufferedReader;
+
 
 public class DataProviders {
 
@@ -57,4 +61,34 @@ public class DataProviders {
 
         return dataArray;
     }
+    
+    
+  //-----------------CSV------------------------
+    @DataProvider(name = "csvDataProvider")
+    public Object[][] csvDataProvider() throws IOException {
+
+        String filePath = "./test-data/order.csv";
+
+        List<String[]> csvData = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+
+            br.readLine(); // skip header
+
+            String line;
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                csvData.add(values);
+            }
+        }
+
+        Object[][] dataArray = new Object[csvData.size()][];
+
+        for (int i = 0; i < csvData.size(); i++) {
+            dataArray[i] = csvData.get(i);
+        }
+
+        return dataArray;   // ✅ inside method
+    }
+
 }
