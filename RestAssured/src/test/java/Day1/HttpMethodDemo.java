@@ -1,25 +1,33 @@
 package Day1;
 
-import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.*;
+
+import org.testng.annotations.Test;
 
 public class HttpMethodDemo {
 
-	
-	@Test
-	public void getMethod()
-	{
-		
-		
-		given()
-		 .header("User-Agent", "Mozilla/5.0")
-         .header("Accept", "application/json")
-		.when()
-		    .get("https://reqres.in/api/users?page=2")
-		.then()
-		   .statusCode(200)
-		   .log().body();
-	}
+    @Test(enabled = false)
+    public void getMethod() {
+
+        given()
+        .when()
+           // .get("https://reqres.in/api/users?page=2")
+              .get("https://jsonplaceholder.typicode.com/users")       //we used this link because that was not working
+        .then()
+            .statusCode(200)
+            .time(lessThan(2000L))
+            .header("Content-Type", containsString("application/json"))
+           // .body("page", equalTo(2))
+           // .body("data.email", everyItem(containsString("@")))
+            .body("email", everyItem(containsString("@")))
+            .log().body();
+    }
+    
+    
+    @Test(priority=2 , enabled = true)
+    public void postMethod()
+    {
+    	
+    }
 }
