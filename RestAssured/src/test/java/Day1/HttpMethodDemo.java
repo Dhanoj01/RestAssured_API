@@ -1,7 +1,11 @@
 package Day1;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.containsString;
+import static org.hamcrest.Matchers.everyItem;
+import static org.hamcrest.Matchers.lessThan;
+
+import java.util.HashMap;
 
 import org.testng.annotations.Test;
 
@@ -28,6 +32,8 @@ public class HttpMethodDemo {
     @Test(priority=2 , enabled = true)
     public void postMethod()
     {
+    	
+    	HashMap<String , String> payload = new HashMap<>();
     	
     }
 }
