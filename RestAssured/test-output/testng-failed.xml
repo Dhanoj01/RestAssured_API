@@ -5,7 +5,7 @@
     <classes>
       <class name="Day1.HttpMethodDemo">
         <methods>
-          <include name="getMethod"/>
+          <include name="putMethod"/>
         </methods>
       </class> <!-- Day1.HttpMethodDemo -->
     </classes>
