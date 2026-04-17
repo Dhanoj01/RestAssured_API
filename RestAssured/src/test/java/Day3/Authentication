@@ -1,0 +1,13 @@
+Rest Assured
+------------
+
+Authentication
+--------------
+
+1. Basic               ---------------- userId Password
+2. Basic-preemptive    ---------------- userId password
+3. Digest              ---------------- userId Password
+4. Bearer Token        ---------------- for github repo(generate from github from developer setting)
+5. API Key             ---------------- wheather site(generate from site after login)
+
+6. OAuth 2.o           ----------------  impo
