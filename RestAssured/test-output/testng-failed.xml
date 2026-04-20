@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Day1.HttpMethodDemo">
+      <class name="Day3.AuthenticationTest">
         <methods>
-          <include name="putMethod"/>
+          <include name="verifyBasicAuth"/>
         </methods>
-      </class> <!-- Day1.HttpMethodDemo -->
+      </class> <!-- Day3.AuthenticationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
