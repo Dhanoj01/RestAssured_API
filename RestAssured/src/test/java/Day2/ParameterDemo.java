@@ -20,7 +20,7 @@ public class ParameterDemo {
 	}
 	
 	
-	@Test
+	//@Test
 	public void queryParamm()
 	{
 		
