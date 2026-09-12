@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-07-11T11:38:34 IST" name="Default suite" finished-at="2026-07-11T11:38:34 IST" duration-ms="979">
+  <suite started-at="2026-08-14T15:00:55 IST" name="Default suite" finished-at="2026-08-14T15:00:57 IST" duration-ms="1937">
     <groups>
     </groups>
-    <test started-at="2026-07-11T11:38:34 IST" name="Default test" finished-at="2026-07-11T11:38:34 IST" duration-ms="979">
-      <class name="Day2.ParameterDemo">
-        <test-method signature="pathParam()[pri:0, instance:Day2.ParameterDemo@159f197]" started-at="2026-07-11T11:38:34 IST" name="pathParam" finished-at="2026-07-11T11:38:34 IST" duration-ms="968" status="PASS">
+    <test started-at="2026-08-14T15:00:55 IST" name="Default test" finished-at="2026-08-14T15:00:57 IST" duration-ms="1937">
+      <class name="Practise">
+        <test-method signature="getRequest()[pri:0, instance:Practise@159f197]" started-at="2026-08-14T15:00:55 IST" name="getRequest" finished-at="2026-08-14T15:00:57 IST" duration-ms="1926" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pathParam -->
-      </class> <!-- Day2.ParameterDemo -->
+        </test-method> <!-- getRequest -->
+      </class> <!-- Practise -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
