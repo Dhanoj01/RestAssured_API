@@ -13,14 +13,21 @@ import org.testng.annotations.Test;
 public class Practise{
 	
 	@Test
-     public void getRequest()
-     {
-    	 
+	public void postRequest()
+	{
+		
+		String payload  = "";
+		
 		given()
-		.when()
-		   .get("https://www.google.com/")
-		.then() 
-		 .statusCode(200);
-     }
+		  .contentType("application/json")
+		  .body(payload)
+	    .when()
+	        .post("")
+	    .then()
+	        .statusCode(201)
+	        .body("name", equalTo("Dhanoj"))
+	        .body("id" , equalTo("1"))
+	        .log().all();
+	}
 	
 }
